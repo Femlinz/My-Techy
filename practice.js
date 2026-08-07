@@ -60,3 +60,55 @@
  }
  console.log(checkEvenOddArrow(11)) 
  
+//length
+console.log(fruits.length); //returns the length of the array
+console.log(fruits[fruits.length -2])
+
+
+//array
+let fruits1 = ["apple", "banana", "orange"];
+console.log("i love " + fruits1[0] + " and " + fruits1[1] + " and " + fruits1[2]); //prints the elements of the array
+console.log("i love " + fruits1)
+//print each element of the array using for loop
+fruits1.forEach(fruit => console.log("i love " + fruit)); //prints each element of the array
+
+//map
+let prices = [500, 1200, 800, 3000];
+// Add 10% VAT to every price 
+let priceswithVAT = prices.map(function(price) {
+    return price * 1.1; // Add 10% VAT
+});
+console.log(priceswithVAT);
+console.log(prices)
+
+//filter
+let scores =[45, 72, 38, 90, 55, 29, 88];
+let passingScores = scores.filter(function(score) {
+    return score >= 50;
+});
+console.log(scores);
+console.log(passingScores);
+
+//arrow function
+let fallingscores = scores.filter(score => score < 50);
+console.log(fallingscores);
+
+//object
+let student = {
+    name: "John Doe",
+    age: 20,
+    grade: "A",
+    subjects: ["Math", "Science", "History"],
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        state: "CA",
+        zip: "12345",
+        Religion: "Christianity"
+    }}
+    //Accessing values
+    console.log(student.name),
+    console.log(student.age),
+    console.log(student.grade),
+    console.log(student.subjects),
+    console.log(student.address)

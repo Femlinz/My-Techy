@@ -46,3 +46,25 @@ console.log(evenNumbers);
 const complexion = {"dark": "black", "fair": "white", "medium": "brown"}; 
 const darkcomplexion = Object.values(complexion).filter(value => value === "black"); //returns a new array with only dark complexion
 console.log(darkcomplexion);
+
+//find method
+const findfirstEven = numbers.find(num => num % 2 === 0); //returns the first even number
+console.log(findfirstEven);
+
+//findIndex method
+const findindexofDarkcomplexion = Object.values(complexion).findIndex(value => value === "black"); //returns the index of the first dark complexion 
+console.log(findindexofDarkcomplexion);
+
+//reduce method
+const nums = [700, 300, 500, 1000, 2000];
+const sum = nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0); //returns the sum of all elements in the array
+console.log(sum);
+console.log("this is the sum of all elements in the array", nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0)); //returns the sum of all elements in the array
+const product = nums.reduce((accumulator, currentValue) => accumulator * currentValue, 1); //returns the product of all elements in the array
+console.log("this is the product of all elements in the array", nums.reduce((accumulator, currentValue) => accumulator * currentValue, 1)); //returns the product of all elements in the array  
+const minus = nums.reduce((accumulator, currentValue) => accumulator - currentValue); //returns the difference of all elements in the array
+console.log("this is the difference of all elements in the array", nums.reduce((accumulator, currentValue) => accumulator - currentValue)); //returns the difference of all elements in the arra
+
+
+
+
