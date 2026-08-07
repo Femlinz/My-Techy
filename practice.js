@@ -93,22 +93,3 @@ console.log(passingScores);
 let fallingscores = scores.filter(score => score < 50);
 console.log(fallingscores);
 
-//object
-let student = {
-    name: "John Doe",
-    age: 20,
-    grade: "A",
-    subjects: ["Math", "Science", "History"],
-    address: {
-        street: "123 Main St",
-        city: "Anytown",
-        state: "CA",
-        zip: "12345",
-        Religion: "Christianity"
-    }}
-    //Accessing values
-    console.log(student.name),
-    console.log(student.age),
-    console.log(student.grade),
-    console.log(student.subjects),
-    console.log(student.address)
