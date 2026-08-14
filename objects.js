@@ -20,3 +20,20 @@ let employee = {name : "John Smith", age: 30, position: "Manager", salary: 50000
 employee.position = "Senior Manager";   
 const {name, age, position, salary} = employee
 console.log(name, age, position, salary); //prints the updated employee object
+
+//object methods
+let DNA = {
+    gender :"xy",
+    complexion : "dark"
+}
+
+let offspring = {
+    ...DNA,
+    name: "John",
+    age: 20
+}
+console.log(offspring); //prints the offspring object with the properties of DNA and the new properties
+
+console.log(Object.keys(offspring)); //prints the keys of the offspring object
+console.log(Object.values(offspring)); //prints the values of the offspring object
+console.log(Object.entries(offspring)); //prints the entries of the offspring object
