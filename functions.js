@@ -25,3 +25,6 @@ console.log(10 > 5 && "Cat" === "Dog"); console.log(10 > 5 || "Cat" === "Dog");
      */
     let word  = "String";
     console.log(word.length); 
+
+    let digit = "08107038130"
+console.log(digit.length) 

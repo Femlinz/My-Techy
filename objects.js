@@ -16,6 +16,10 @@ student.name = "Jane Doe"; //modifying the name property
 student.age = 21;
 console.log(student); //prints "Jane Doe"
 
+
+
+
+
 let employee = {name : "John Smith", age: 30, position: "Manager", salary: 50000};
 employee.position = "Senior Manager";   
 const {name, age, position, salary} = employee

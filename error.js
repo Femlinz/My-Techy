@@ -46,3 +46,22 @@ function loadUserData(userId){
             registerstudent("",15)
             registerstudent("kemi", 10)
 
+            //student registration case
+    let students = []
+ function addstudent(name, age, course){
+    try{
+        if (!name) throw new Error("Name is required");
+        if (age < 16) throw new Error("Student must be at least 16 years old");
+        
+        let newStudent = { name, age, course, id: students.length + 1};
+        students.push(newStudent);
+        console.log("Added: " + name);
+    } catch (error) {
+        console.log("Error: " + error.message);
+    } finally {
+        console.log("Total students: " + students.length);
+    }
+ }         
+
+ addstudent("Amaka Obi", 20, "Backend Engineering");
+ addstudent("", 18, "Frontend");
